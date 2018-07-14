@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>Car Information Form</h2>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Car Name">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-radio-group>
+      <mat-radio-button value="1">Petrol</mat-radio-button>
+      <mat-radio-button value="2">Disel</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-select placeholder="Select Car Colour" [(ngModel)]="selectedValue" name="data">
+        <mat-option *ngFor="let data of car_color" [value]="data.color">
+          {{data.color}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Car Number">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="No of Seats">
+    </mat-form-field>
+  </div>
+
+
+
+
+</div>
+
+
+
